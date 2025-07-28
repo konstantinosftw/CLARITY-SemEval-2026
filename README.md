@@ -3,7 +3,7 @@
 [![Paper Status](https://img.shields.io/badge/EMNLP%202024-Accepted-brightgreen)](https://example.com/link-to-paper)
 [![arXiv](https://img.shields.io/badge/arXiv-2409.13879-b31b1b)]([https://arxiv.org/abs/2409.13879](https://arxiv.org/abs/2409.13879))
 
-![alt text](https://github.com/konstantinosftw/Question-Evasion/blob/main/logo.jpg?raw=true)
+![alt text](https://github.com/konstantinosftw/CLARITY-SemEval-2026/blob/main/logo.jpg?raw=true)
 
 
 This repository provides resources for **detecting and classifying response clarity in political interviews**, introducing:
