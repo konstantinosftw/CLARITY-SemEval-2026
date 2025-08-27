@@ -52,9 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">CLARITY - Unmasking Political Question Evasions</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+            <h1 class="title is-1 publication-title">CLARITY <br> <span style="color:#555555; font-size: 0.7em;">Unmasking Political Question Evasions</span></h1>
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Konstantinos Thomas</a><sup>1</sup>,
               </span>
@@ -71,35 +70,35 @@
                 <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Giorgos Stamou</a><sup>1</sup>,
               </span>
               </span>
-            </div>
+            </div> -->
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>National Technical University of Athens,</span>
+              <!-- <span class="author-block"><sup>1</sup>National Technical University of Athens,</span>
               <span class="author-block"><sup>2</sup>Instituto de Telecomunicações,</span>
               <span class="author-block"><sup>3</sup>Instituto Superior Técnico, Universidade de Lisboa,</span>
-              <span class="author-block"><sup>4</sup>ELLIS Unit Lisbon</span><br>
+              <span class="author-block"><sup>4</sup>ELLIS Unit Lisbon</span><br> -->
               <span class="author-block"><strong>SemEval 2026 Challenge</strong></span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- Huggingface dataset link link -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/ailsntua/QEvasion" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      🤗
-                    </span>
-                    <span>Dataset</span>
-                  </a>
+<span class="link-block" style="margin-top: 50px;text-align: center;">
+              <a href="https://huggingface.co/datasets/ailsntua/QEvasion" target="_blank"
+                class="external-link button is-normal is-rounded" style="background-color: #fff435;border-color: transparent;color: #000000;border: 1px black solid;">
+                <span class="icon">
+                  🤗
                 </span>
+                <span>Dataset</span>
+              </a>
+            </span>
 
-                <!-- Github link -->
+                <!-- arXiv link -->
                 <span class="link-block">
-                  <a href="https://github.com/konstantinosftw/Question-Evasion" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2409.13879" target="_blank"
+                    class="external-link button is-normal is-rounded" style="background-color: #b31a1b; border-color: transparent;color: #ffffff;border: 1px black solid;">
                     <span class="icon">
-                      <i class="fa fa-link"></i>
+                      <i class="ai ai-arxiv"></i>
                     </span>
                     <span>Paper</span>
                   </a>
@@ -122,7 +121,8 @@
         <div id="results-carousel" class="carousel results-carousel" data-autoplay="false">
           <div class="item item-video1">
             <div class="has-text-centered">
-              <video poster="" id="video1" autoplay controls muted loop style="margin: 0 auto; max-width: 100%; display: block; max-height: 700px;">
+              <video poster="" id="video1" autoplay controls muted loop
+                style="margin: 0 auto; max-width: 100%; display: block; max-height: 700px;">
                 <!-- Your video file here -->
                 <source src="static/videos/borders_trump.mp4" type="video/mp4">
               </video>
@@ -133,7 +133,8 @@
           </div>
           <div class="item item-video2">
             <div class="has-text-centered">
-              <video poster="" id="video2" autoplay controls muted loop style="margin: 0 auto; max-width: 100%; display: block; max-height: 700px;">
+              <video poster="" id="video2" autoplay controls muted loop
+                style="margin: 0 auto; max-width: 100%; display: block; max-height: 700px;">
                 <!-- Your video file here -->
                 <source src="static/videos/capitol_trump.mp4" type="video/mp4">
               </video>
@@ -156,13 +157,26 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              Political discourse is rich in ambiguity—a feature that often serves strategic purposes. In high-stakes settings such as televised presidential debates or interviews, politicians frequently employ evasive communication strategies that leave audiences with multiple interpretations of what was actually said and misguided impressions on whether the information requested was conveyed. This phenomenon, known as <em>equivocation</em> or <em>evasion</em> in academic literature, is well-studied in political science but has received limited attention in computational linguistics. Bull (2003) report that politicians gave clear responses to only 39-46% of questions during televised interviews, while non-politicians had a significantly higher 70-89% reply rate. This stark contrast highlights the strategic nature of political communication and the need for automated tools to analyze response clarity at scale.
+              Political discourse is rich in ambiguity—a feature that often serves strategic purposes. In high-stakes
+              settings such as televised presidential debates or interviews, politicians frequently employ evasive
+              communication strategies that leave audiences with multiple interpretations of what was actually said and
+              misguided impressions on whether the information requested was conveyed. This phenomenon, known as
+              <em>equivocation</em> or <em>evasion</em> in academic literature, is well-studied in political science but
+              has received limited attention in computational linguistics. Bull (2003) report that politicians gave
+              clear responses to only 39-46% of questions during televised interviews, while non-politicians had a
+              significantly higher 70-89% reply rate. This stark contrast highlights the strategic nature of political
+              communication and the need for automated tools to analyze response clarity at scale.
             </p>
             <p>
-              Our proposed CLARITY shared task aims to address this gap by introducing a computational approach to detecting and classifying response ambiguity in political discourse. Building on well grounded theory on equivocation and leveraging recent advancements in language modeling, we propose a task that challenges participants to automatically classify the clarity of responses in question/answer (QA) pairs extracted from presidential interviews.
+              Our proposed CLARITY shared task aims to address this gap by introducing a computational approach to
+              detecting and classifying response ambiguity in political discourse. Building on well grounded theory on
+              equivocation and leveraging recent advancements in language modeling, we propose a task that challenges
+              participants to automatically classify the clarity of responses in question/answer (QA) pairs extracted
+              from presidential interviews.
             </p>
             <p>
-              What makes this task particularly compelling is leveraging a novel, two-level taxonomy approach, derived from our paper (Thomas et al., 2024), presented in EMNLP 2024:
+              What makes this task particularly compelling is leveraging a novel, two-level taxonomy approach, derived
+              from our paper (Thomas et al., 2024), presented in EMNLP 2024:
             </p>
             <ol>
               <li>
@@ -173,12 +187,22 @@
               </li>
             </ol>
             <p>
-              This hierarchical approach not only provides a deeper understanding of political discourse but also, as our preliminary experiments show, can lead to improved classification performance when the two levels are used in conjunction.
+              This hierarchical approach not only provides a deeper understanding of political discourse but also, as
+              our preliminary experiments show, can lead to improved classification performance when the two levels are
+              used in conjunction.
             </p>
             <p>
-              The CLARITY task will attract researchers from diverse communities, including NLP researchers interested in discourse analysis, semantic understanding, and reasoning over long contexts, fact-checking seeking to detect if an answer is factual but irrelevant, and other downstream NLP tasks such as question answering and dialogue systems. Moreover, by providing a standardized dataset and evaluation framework, CLARITY will facilitate political speech discourse analysis at scale, allowing for comparisons across politicians, time periods, and contexts. Contributing to the development of more transparent and accountable political communication and provide insights to media analysts examining patterns in political interviews and press conferences.
+              The CLARITY task will attract researchers from diverse communities, including NLP researchers interested
+              in discourse analysis, semantic understanding, and reasoning over long contexts, fact-checking seeking to
+              detect if an answer is factual but irrelevant, and other downstream NLP tasks such as question answering
+              and dialogue systems. Moreover, by providing a standardized dataset and evaluation framework, CLARITY will
+              facilitate political speech discourse analysis at scale, allowing for comparisons across politicians, time
+              periods, and contexts. Contributing to the development of more transparent and accountable political
+              communication and provide insights to media analysts examining patterns in political interviews and press
+              conferences.
             </p>
-            <p style="font-weight: 700; text-align: center; font-style: italic; font-size: 1.2em; padding-top: 20px; color: #2867d8;">
+            <p
+              style="font-weight: 700; text-align: center; font-style: italic; font-size: 1.2em; padding-top: 20px; color: #2867d8;">
               Can your system unmask a seasoned politician’s dodge?
             </p>
           </div>
@@ -190,21 +214,63 @@
 
   <section class="hero is-small">
     <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3" style="text-align: center;">Tasks & Evaluation</h2>
+            <div class="item">
+              <h3 style="font-size: revert;font-weight: revert;">Task 1 - Clarity-level Classification</h3>
+              <p>
+                Given a question and an answer, classify the answer as <em>Clear Reply</em>, <em>Ambiguous</em> or
+                <em>Clear Non-Reply</em>.
+              </p>
+              <br>
+              <h3 style="font-size: revert;font-weight: revert;">Task 2 - Evasion-level Classification</h3>
+              <p>
+                Given a question and an answer, classify the answer into one of the 9 <em>evasion</em> techniques.
+              </p>
+              <br>
+              <h3 style="font-size: revert;font-weight: revert;">Evaluation</h3>
+              <p>
+                Both tasks will be evaluated using macro F1-score, ensuring balanced performance across all classes.
+                Evaluation will be conducted on both the official test set and a held-out private evaluation set to
+                ensure robust performance assessment. </p>
+            </div>
+            <div style="margin-top: 20px; justify-self: center;">
+            <span class="link-block" style="margin-top: 50px;text-align: center;">
+              <a href="https://huggingface.co/datasets/ailsntua/QEvasion" target="_blank"
+                class="external-link button is-normal is-rounded" style="background-color: #fff435;border-color: transparent;color: #000000;border: 1px black solid;">
+                <span class="icon">
+                  🤗
+                </span>
+                <span>Dataset</span>
+              </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
       <div class="container">
         <div>
           <h2 class="title is-3" style="text-align: center;">Clarity Classification Pipeline</h2>
           <div class="item" style="text-align: center;">
-          <!-- Your image here -->
-          <img style="max-width: min(700px, 100%)" src="static/images/EMNLP Political QEvasion Example - vertical.jpg" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
-            Figure 1 - An example from an interview from our
-                dataset with classification along with an analysis from
-                instruction-tuned Llama-70b.
-          </h2>
+            <!-- Your image here -->
+            <img style="max-width: min(700px, 100%)" src="static/images/EMNLP Political QEvasion Example - vertical.jpg"
+              alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Figure 1 - An example from an interview from our
+              dataset with classification along with an analysis from
+              instruction-tuned Llama-70b.
+            </h2>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-  </div>
   </section>
 
   <!-- Updates -->
@@ -274,10 +340,13 @@
           <div class="content">
             <div class="is-flex is-justify-content-center is-flex-wrap-wrap" style="gap: 2rem;">
               <!-- Logo images from your directory -->
-              <img src="static/images/Εθνικό_Μετσόβειο_Πολυτεχνείο.svg" alt="NTUA Logo" style="height: 60px; width: auto; max-height: 60px;">
+              <img src="static/images/Εθνικό_Μετσόβειο_Πολυτεχνείο.svg" alt="NTUA Logo"
+                style="height: 60px; width: auto; max-height: 60px;">
               <img src="static/images/it_logo2.png" alt="IT Logo" style="height: 60px; width: auto; max-height: 60px;">
-              <img src="static/images/IST_A_RGB_POS.png" alt="IST Logo" style="height: 60px; width: auto; max-height: 60px;">
-              <img src="static/images/ellis_logo2_640_transparent.png" alt="ELLIS Logo" style="height: 60px; width: auto; max-height: 60px;">
+              <img src="static/images/IST_A_RGB_POS.png" alt="IST Logo"
+                style="height: 60px; width: auto; max-height: 60px;">
+              <img src="static/images/ellis_logo2_640_transparent.png" alt="ELLIS Logo"
+                style="height: 60px; width: auto; max-height: 60px;">
             </div>
           </div>
         </div>
