@@ -93,7 +93,6 @@
             <div class="is-size-6" style="margin-top: 1rem;">
               <a href="#overview" style="margin: 0 0.5rem; color: #3273dc;">Overview</a> |
               <a href="#tasks" style="margin: 0 0.5rem; color: #3273dc;">Tasks & Evaluation</a> |
-              <a href="#pipeline" style="margin: 0 0.5rem; color: #3273dc;">Pipeline</a> |
               <a href="#timeline" style="margin: 0 0.5rem; color: #3273dc;">Timeline</a> |
               <a href="#faq" style="margin: 0 0.5rem; color: #3273dc;">FAQ</a>
             </div>
@@ -104,7 +103,7 @@
     </div>
   </section>
 
-  <hr>
+  <!-- <hr> -->
 
   <!-- Video carousel -->
   <section class="hero is-small">
@@ -207,6 +206,26 @@
 
   <section class="hero is-small">
     <div class="hero-body">
+      <div class="container">
+        <div>
+          <h2 class="title is-3" style="text-align: center;" id="pipeline">Clarity Classification Pipeline</h2>
+          <div class="item" style="text-align: center;">
+            <!-- Your image here -->
+            <img style="max-width: min(700px, 100%)" src="static/images/EMNLP Political QEvasion Example - vertical.jpg"
+              alt="MY ALT TEXT" />
+            <p class="has-text-centered">
+              Figure 1 - An example from an interview from our
+              dataset with classification along with an analysis from
+              instruction-tuned Llama-70b.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-four-fifths">
@@ -247,28 +266,8 @@
     </div>
   </section>
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div>
-          <h2 class="title is-3" style="text-align: center;" id="pipeline">Clarity Classification Pipeline</h2>
-          <div class="item" style="text-align: center;">
-            <!-- Your image here -->
-            <img style="max-width: min(700px, 100%)" src="static/images/EMNLP Political QEvasion Example - vertical.jpg"
-              alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Figure 1 - An example from an interview from our
-              dataset with classification along with an analysis from
-              instruction-tuned Llama-70b.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Updates -->
-  <section class="hero is-small is-light">
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <!-- Paper video. -->
@@ -383,27 +382,33 @@
   </section>
   <!--End BibTex citation -->
 
+  <!-- Back to top button -->
+  <button id="back-to-top" class="button is-primary is-rounded" 
+          style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 1000; 
+                 background-color: #3273dc; border-color: #3273dc; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <span class="icon">
+      <i class="fas fa-arrow-up"></i>
+    </span>
+  </button>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <div class="is-flex is-justify-content-center is-flex-wrap-wrap" style="gap: 2rem;">
-              <!-- Logo images from your directory -->
-              <img src="static/images/Εθνικό_Μετσόβειο_Πολυτεχνείο.svg" alt="NTUA Logo"
-                style="height: 60px; width: auto; max-height: 60px;">
-              <img src="static/images/it_logo2.png" alt="IT Logo" style="height: 60px; width: auto; max-height: 60px;">
-              <img src="static/images/IST_A_RGB_POS.png" alt="IST Logo"
-                style="height: 60px; width: auto; max-height: 60px;">
-              <img src="static/images/ellis_logo2_640_transparent.png" alt="ELLIS Logo"
-                style="height: 60px; width: auto; max-height: 60px;">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <script>
+    // Back to top functionality
+    window.addEventListener('scroll', function() {
+      const backToTopButton = document.getElementById('back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 
   <!-- Statcounter tracking code -->
 
